@@ -1,41 +1,39 @@
-# Active Directory Lab
+# Active Directory Home Lab
 
-This section documents hands-on Active Directory administration performed in a Windows Server 2022 lab environment.
+This project documents the setup and configuration of a Windows Server 2022 Active Directory lab environment. The lab demonstrates core domain administration tasks including domain controller deployment, domain joining, user and group management, organizational units, Group Policy, DNS, and shared folder permissions.
 
-## Topics Covered
+## Lab Environment
 
-- User account management
-- Group management
-- Password policy configuration
-- Domain administration
-- Windows 10 domain joining
-- Authentication testing
+- Windows Server 2022 Domain Controller
+- Windows 10 Enterprise Client
+- Active Directory Domain Services
+- DNS Server
+- Group Policy Management
+- SMB File Sharing
 
-## Environment
+## Domain Information
 
-- Windows Server 2022
-- Active Directory Domain Services (AD DS)
-- Windows 10
-- VirtualBox
+- Domain: cyberlab.local
+- Domain Controller: DC01
+- Client Machine: Windows 10 Enterprise
 
-## Activities
+## Project Sections
 
-### User Management
-- Created and managed domain user accounts
-- Reset user passwords
-- Enabled and disabled accounts
-- Tested user logins
+- Domain Controller Setup
+- Domain Join
+- Users and Groups
+- Organizational Units
+- Group Policy
+- DNS Configuration
+- Shared Folder Permissions
 
-### Password Policies
-- Configured password requirements
-- Tested password complexity settings
-- Verified policy enforcement
+## Skills Demonstrated
 
-### Domain Administration
-- Joined Windows 10 systems to the domain
-- Verified domain authentication
-- Managed users through Active Directory Users and Computers (ADUC)
-
-## Goals
-
-Develop practical experience with Active Directory administration and gain a better understanding of identity and access management within a Windows enterprise environment.
+- Installed and configured Active Directory Domain Services
+- Promoted Windows Server 2022 to a Domain Controller
+- Joined a Windows 10 client to the domain
+- Created users and security groups
+- Organized Active Directory objects using OUs
+- Created and linked Group Policy Objects
+- Verified Active Directory-integrated DNS
+- Configured shared folder permissions using AD security groups
