@@ -1,19 +1,25 @@
 # Windows Event Log Analysis
 
-This section contains investigations and notes related to Windows Security Event Logs collected in my Splunk lab.
+This project demonstrates the collection, analysis, and investigation of Windows Security Event Logs within a home lab environment using Splunk Enterprise. It focuses on common security events encountered by SOC analysts, including authentication activity, user account management, account lockouts, group membership changes, and PowerShell logging.
+
+---
 
 ## Topics Covered
 
-- Authentication events
-- User account activity
-- Failed and successful logons
-- Account lockouts
-- Event log analysis using SPL
+- Authentication Events (Event IDs 4624 & 4625)
+- User Account Management (4720, 4722, 4724, 4725)
+- Account Lockout Investigation (4740)
+- Group Membership Changes (4732, 4733)
+- PowerShell Operational Logging
+- Security Event Analysis using SPL
+
+---
 
 ## Environment
 
-- Splunk Enterprise
-- Windows Server 2022
-- Windows 10
-- Active Directory
-- VirtualBox
+- Splunk Enterprise 10.4.0
+- Splunk Universal Forwarder
+- Windows Server 2022 (Domain Controller)
+- Windows 10 Enterprise (Domain Joined)
+- Active Directory Domain Services
+- Oracle VirtualBox
