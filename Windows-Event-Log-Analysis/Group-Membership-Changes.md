@@ -68,7 +68,7 @@ The user was added to the **Remote Desktop Users** security group within Active 
 index=* EventCode=4732
 ```
 
-![Event ID 4732](./screenshots/event-4732-member-added.png)
+![Event ID 4732](/Windows-Event-Log-Analysis/screenshots/event-4732-member-added.png)
 
 ---
 
