@@ -61,66 +61,68 @@ The investigation confirmed that:
 
 # Screenshots
 
-## User Account Creation
-
-A new Active Directory user account was created. Splunk successfully recorded the corresponding Windows Security Event ID 4720.
+## 1. User Account Created
 
 ### Active Directory
 
 ![Create User](screenshots/create-user-ad.png)
 
-### Splunk Verification
+### SPL Query
 
 ```spl
 index=* EventCode=4720
 ```
 
-![Event 4720](screenshots/event-4720-user-created.png)
-
----
-
-## User Account Enabled
-
-The disabled user account was enabled in Active Directory. Splunk recorded Event ID 4722.
-
-```spl
-index=* EventCode=4722
-```
-
-![Event 4722](screenshots/event-4722-user-enabled.png)
-
----
-
-## Password Reset
-
-The user's password was reset through Active Directory Users and Computers. Splunk recorded Event ID 4724.
-
-### Active Directory
-
-![Reset Password](screenshots/reset-password-dialog.png)
-
 ### Splunk Verification
 
-```spl
-index=* EventCode=4724
-```
-
-![Event 4724](screenshots/event-4724-password-reset.png)
+![Event ID 4720](screenshots/event-4720-user-created.png)
 
 ---
 
-## User Account Disabled
-
-The user account was disabled within Active Directory. Splunk recorded Event ID 4725.
+## 2. User Account Disabled
 
 ### Active Directory
 
 ![Disabled Account](screenshots/disabled-account-popup.png)
 
-### Splunk Verification
+### SPL Query
 
 ```spl
 index=* EventCode=4725
 ```
 
-![Event 4725](screenshots/event-4725-user-disabled.png)
+### Splunk Verification
+
+![Event ID 4725](screenshots/event-4725-user-disabled.png)
+
+---
+
+## 3. Password Reset
+
+### Active Directory
+
+![Reset Password](screenshots/reset-password-dialog.png)
+
+### SPL Query
+
+```spl
+index=* EventCode=4724
+```
+
+### Splunk Verification
+
+![Event ID 4724](screenshots/event-4724-password-reset.png)
+
+---
+
+## 4. User Account Enabled
+
+### SPL Query
+
+```spl
+index=* EventCode=4722
+```
+
+### Splunk Verification
+
+![Event ID 4722](screenshots/event-4722-user-enabled.png)
