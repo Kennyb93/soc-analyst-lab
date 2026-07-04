@@ -78,7 +78,7 @@ The user's password was reset using Active Directory Users and Computers.
 
 ### Active Directory
 
-![Reset Password](screenshots/reset-password-dialog.png)
+![Reset Password](screenshots/reset-password-and-unlock.png)
 
 ### SPL Query
 
