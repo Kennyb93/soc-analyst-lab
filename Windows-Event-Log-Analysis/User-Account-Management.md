@@ -126,3 +126,5 @@ index=* EventCode=4722
 ### Splunk Verification
 
 ![Event ID 4722](screenshots/event-4722-user-enabled.png)
+
+![Event ID 4722](screenshots/event-4722-user-enabled.png)
