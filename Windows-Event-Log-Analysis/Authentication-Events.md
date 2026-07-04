@@ -72,7 +72,7 @@ The following SPL search was used to locate failed authentication events generat
 index=* EventCode=4625
 ```
 
-![Failed Logon Search](screenshots/failed-logon-search.png)
+![Failed Logon Search](screenshots/failed-logon-event-4625.png)
 
 ---
 
