@@ -2,16 +2,9 @@
 
 ## Overview
 
-This section documents the investigation of a Windows account lockout within an Active Directory environment. Multiple failed authentication attempts were generated to trigger the account lockout policy, resulting in Windows Security Event ID 4740. The investigation demonstrates how Splunk Enterprise can be used to identify the cause of the lockout and verify administrative remediation.
+This section demonstrates how Windows account lockouts can be investigated using Windows Security Event Logs collected in Splunk Enterprise.
 
----
-
-## Objectives
-
-- Generate a Windows account lockout.
-- Investigate failed authentication attempts.
-- Identify the Windows Security Event generated during the lockout.
-- Verify account recovery after administrative intervention.
+Multiple failed authentication attempts were generated to trigger the configured account lockout policy, allowing the resulting security events to be analysed.
 
 ---
 
@@ -26,7 +19,7 @@ This section documents the investigation of a Windows account lockout within an 
 
 ---
 
-## Event IDs Investigated
+## Event IDs
 
 | Event ID | Description |
 |----------|-------------|
@@ -35,32 +28,11 @@ This section documents the investigation of a Windows account lockout within an 
 
 ---
 
-## Activities Performed
+# Demonstration
 
-- Generated multiple failed logon attempts using an incorrect password.
-- Triggered the configured Active Directory account lockout policy.
-- Investigated failed authentication events in Splunk.
-- Confirmed the account lockout using Windows Security Event ID 4740.
-- Unlocked the account using Active Directory Users and Computers.
+## 1. Failed Authentication Attempts
 
----
-
-## Verification
-
-The investigation confirmed that:
-
-- Multiple failed logon attempts generated Event ID 4625.
-- The configured lockout threshold generated Event ID 4740.
-- Splunk identified the affected user account and source workstation.
-- The account was successfully unlocked by an administrator.
-
----
-
-# Screenshots
-
-## Failed Logon Events
-
-Multiple failed authentication attempts were generated before the account lockout occurred.
+Multiple failed logon attempts were generated using an incorrect password.
 
 ### SPL Query
 
@@ -68,13 +40,15 @@ Multiple failed authentication attempts were generated before the account lockou
 index=* EventCode=4625
 ```
 
-![Failed Logon Events](screenshots/failed-logon-event-4625.png)
+### Splunk Verification
+
+![Failed Logon Event](screenshots/failed-logon-event-4625.png)
 
 ---
 
-## Account Lockout Event
+## 2. Account Lockout
 
-Splunk identified Windows Security Event ID 4740 after the account exceeded the configured lockout threshold.
+After the configured lockout threshold was reached, Windows generated Event ID 4740.
 
 ### SPL Query
 
@@ -82,20 +56,28 @@ Splunk identified Windows Security Event ID 4740 after the account exceeded the 
 index=* EventCode=4740
 ```
 
-![Account Lockout Event](screenshots/event-4740-account-lockout.png)
+### Splunk Verification
+
+![Event ID 4740](screenshots/event-4740-account-lockout.png)
 
 ---
 
-## Windows Account Lockout
+## 3. Windows Account Lockout
 
-The Windows client confirmed that the user account had been locked following multiple failed authentication attempts.
+The Windows client confirmed that the user account had been locked.
 
-![Account Lockout Screen](screenshots/account-lockout-screen.png)
+![Account Lockout](screenshots/account-lockout-screen.png)
 
 ---
 
-## Unlocking the User Account
+## 4. Unlocking the Account
 
-The administrator unlocked the account using Active Directory Users and Computers, restoring access for the affected user.
+The account was unlocked using Active Directory Users and Computers.
 
 ![Unlock Account](screenshots/reset-password-dialog.png)
+
+---
+
+## Findings
+
+The investigation confirmed that repeated failed authentication attempts generated Event ID 4625 before the configured account lockout policy triggered Event ID 4740. Splunk successfully identified the affected user account, source computer, and administrator actions used to restore access.
