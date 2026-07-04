@@ -127,4 +127,4 @@ index=* EventCode=4722
 
 ![Event ID 4722](screenshots/event-4722-user-enabled.png)
 
-![Event ID 4722](screenshots/event-4722-user-enabled.png)
+
