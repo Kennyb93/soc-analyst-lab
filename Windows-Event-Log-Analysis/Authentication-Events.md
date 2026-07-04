@@ -42,7 +42,7 @@ index=* EventCode=4625
 
 ### Splunk Verification
 
-![Failed Logon Event](screenshots/failed-logon-event-4625.png)
+![Failed Logon Event](screenshots/event-4625-failed-login.png)
 
 ---
 
@@ -58,7 +58,7 @@ index=* EventCode=4624
 
 ### Splunk Verification
 
-![Successful Logon Event](screenshots/successful-logon-event-4624.png)
+![Successful Logon Event](screenshots/event-4624-successful-login.png)
 
 ---
 
