@@ -74,7 +74,7 @@ The Windows client confirmed that the user account had been locked.
 
 The account was unlocked using Active Directory Users and Computers.
 
-![Unlock Account](screenshots/reset-password-dialog.png)
+![Unlock Account](screenshots/reset-password_and_unlock.png)
 
 ---
 
