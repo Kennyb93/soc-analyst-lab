@@ -101,7 +101,7 @@ index=* EventCode=4725
 
 ### Active Directory
 
-![Reset Password](screenshots/reset-password-dialog.png)
+![Reset Password](screenshots/reset-password_and_unlock.png)
 
 ### SPL Query
 
