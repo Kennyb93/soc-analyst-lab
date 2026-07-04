@@ -65,3 +65,5 @@ index=* EventCode=4624
 ## Findings
 
 The investigation confirmed that Windows Security Events accurately recorded both successful and failed authentication attempts. Splunk successfully identified the username, logon type, authentication package, source workstation, and outcome of each authentication event.
+
+Note: This successful logon was recorded as Logon Type 11 (Cached Interactive), indicating that Windows authenticated the domain user using cached credentials.
