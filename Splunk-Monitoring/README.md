@@ -9,6 +9,7 @@ This section documents the deployment and use of Splunk Enterprise for log colle
 - Splunk Universal Forwarder configuration
 - SPL searches and queries
 - Security event analysis
+- Windows endpoint security monitoring dashboard using Sysmon telemetry
 
 ## Environment
 
