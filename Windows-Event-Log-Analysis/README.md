@@ -13,6 +13,14 @@ This project demonstrates the collection, analysis, and investigation of Windows
 - PowerShell Operational Logging
 - Security Event Analysis using SPL
 
+## Project Documentation
+
+- [Authentication Events](Authentication-Events.md)
+- [Account Lockout Investigation](Account-Lockout-Investigation.md)
+- [Group Membership Changes](Group-Membership-Changes.md)
+- [PowerShell Activity](PowerShell-Activity.md)
+- [Process Creation Monitoring](Process-Creation-Monitoring.md)
+
 ---
 
 ## Environment
