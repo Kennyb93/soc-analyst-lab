@@ -17,6 +17,7 @@ This project demonstrates the collection, analysis, and investigation of Windows
 
 - [Authentication Events](Authentication-Events.md)
 - [Account Lockout Investigation](Account-Lockout-Investigation.md)
+- [User Account Management](User-Account-Management.md)
 - [Group Membership Changes](Group-Membership-Changes.md)
 - [PowerShell Activity](PowerShell-Activity.md)
 - [Process Creation Monitoring](Process-Creation-Monitoring.md)
