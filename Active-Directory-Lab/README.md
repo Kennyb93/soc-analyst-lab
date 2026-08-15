@@ -19,13 +19,13 @@ This project documents the setup and configuration of a Windows Server 2022 Acti
 
 ## Project Sections
 
-- Domain Controller Setup
-- Domain Join
-- Users and Groups
-- Organizational Units
-- Group Policy
-- DNS Configuration
-- Shared Folder Permissions
+- [Domain Controller Setup](Domain-Controller-Setup.md)
+- [Domain Join](Domain-Join.md)
+- [Users and Groups](Users-and-Groups.md)
+- [Organizational Units](Organizational-Units.md)
+- [Group Policy](Group-Policy.md)
+- [DNS Configuration](DNS.md)
+- [Shared Folder Permissions](Shared-Folder-Permissions.md)
 
 ## Skills Demonstrated
 
