@@ -11,6 +11,14 @@ This section documents the deployment and use of Splunk Enterprise for log colle
 - Security event analysis
 - Windows endpoint security monitoring dashboard using Sysmon telemetry
 
+## Project Documentation
+
+- [Windows Log Collection](Windows-Log-Collection.md)
+- [Linux Log Collection](Linux-Log-Collection.md)
+- [SPL Queries](SPL-Queries.md)
+- [Security Monitoring](Security-Monitoring.md)
+- [Windows Endpoint Security Dashboard](Windows-Endpoint-Dashboard.md)
+
 ## Environment
 
 - Splunk Enterprise
